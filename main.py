@@ -7,19 +7,19 @@ window.minsize(width=300, height=200)
 window.config(padx=50, pady=50)
 
 
-entry = Entry(width=30)
+entry = Entry(width=15, font=("Courier", 12))
 # Add some text to begin with
 entry.insert(END, string="0")
 # Gets text in entry
 entry.grid(column=2, row=2)
 
 # Label 2
-label2 = Label(text="Miles")
+label2 = Label(text="Miles", font=("Courier", 12))
 label2.grid(column=3, row=2)
 label2.config(padx=30)
 
 # Label 3
-label3 = Label(text="is equal to")
+label3 = Label(text="is equal to", font=("Courier", 12))
 label3.grid(column=1, row=3)
 label3.config(padx=30)
 
@@ -29,20 +29,20 @@ label3.grid(column=2, row=3)
 label3.config(padx=30)
 
 # Label 5
-label5 = Label(text="Km")
+label5 = Label(text="Km", font=("Courier", 12))
 label5.grid(column=3, row=3)
 label5.config(padx=30)
 
 
 def calculate():
     mile = 1.609
-    my_entry = int(entry.get())
-    miles = my_entry * mile
+    my_entry = float(entry.get())
+    miles = round(my_entry * mile)
     label3.config(text=miles)
 
 
 # Button
-button = Button(text="Calculate", command=calculate)
+button = Button(text="Calculate", font=("Courier", 12, "bold"), command=calculate)
 button.grid(column=2, row=4)
 button.config(padx=30)
 
