@@ -7,7 +7,7 @@ window.minsize(width=300, height=200)
 window.config(padx=50, pady=50, bg="white")
 
 
-entry = Entry(width=15, font=("Courier", 12), justify='center', highlightbackground="cyan", bg="white")
+entry = Entry(width=15, font=("Courier", 12), justify='center', highlightbackground="#5B8A72", bg="white")
 # Add some text to begin with
 entry.insert(END, string="0")
 # Gets text in entry
@@ -44,7 +44,7 @@ def calculate():
 # Button
 button = Button(text="Calculate", font=("courier", 12, "bold"), command=calculate)
 button.grid(column=2, row=4)
-button.config(padx=30, bg="cyan")
+button.config(padx=30, bg="#BFCBA8")
 
 
 window.mainloop()
