@@ -10,7 +10,6 @@ window.config(padx=50, pady=50, bg="white")
 entry = Entry(width=15, font=("Courier", 12), justify='center', highlightbackground="#5B8A72", bg="white")
 # Add some text to begin with
 entry.insert(END, string="0")
-# Gets text in entry
 entry.grid(column=2, row=2)
 
 # Label 2
